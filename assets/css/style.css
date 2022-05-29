@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin-top: 25px;
   color: #fff;
-  background: #49b5e7;
+  background: #38b6ff;
   text-transform: uppercase;
 }
 #hero .btn-get-started:hover {
@@ -1308,7 +1308,7 @@ section {
 }
 #footer .credits {
   float: right;
-  font-size: 13px;
+  font-size: 8px;
   color: #0f394c;
 }
 @media (max-width: 575px) {
