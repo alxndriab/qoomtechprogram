@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0 0 0;
   font-size: 20px;
 }
-#hero .btn-get-started {
+.btn-get-started {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #0067f4;
   text-transform: uppercase;
 }
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: #003986;
 }
 @media (max-width: 991px) {
@@ -603,6 +603,14 @@ section {
 --------------------------------------------------------------*/
 .services {
   background-color: #000000;
+}
+
+.services h2 {
+  margin-bottom: 0;
+}
+
+.services .btn-get-started {
+  margin-bottom: 25px;
 }
 
 .services p {
