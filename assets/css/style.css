@@ -10,21 +10,29 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 a {
   text-decoration: none;
-  color: #49b5e7;
+  color: #0067f4;
 }
 
 a:hover {
-  color: #76c7ed;
+  color: #4392ff;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Dosis", sans-serif;
+}
+
+.pattern-dot {
+  background-image: url("../img/Backgrounds/pattern-dot.svg");
+  background-repeat: repeat;
+  background-size: 7px 10px;
+  z-index: 4;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #49b5e7;
+  background: #0067f4;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -45,12 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #000000;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #6dc4ec;
-  color: #fff;
+  background: #003986;
+  color: #000000;
 }
 .back-to-top.active {
   visibility: visible;
@@ -61,11 +69,13 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #0c1440;
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.171);
+  background-image: url(assets\img\Backgrounds\pattern-dot.svg);
+  
 }
 #header .logo {
   font-size: 28px;
@@ -76,9 +86,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
+  color: #ffffff;
 }
 #header .logo a {
-  color: #0f394c;
+  color: #ffffff;
 }
 #header .logo img {
   max-height: 40px;
@@ -111,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Dosis", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #0f394c;
+  color: #ffffff;
   white-space: nowrap;
   transition: 0.3s;
   text-transform: uppercase;
@@ -122,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #49b5e7;
+  color: #0067f4;
 }
 .navbar .dropdown ul {
   display: block;
@@ -134,8 +145,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #0c1440;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.626);
   transition: 0.3s;
 }
 .navbar .dropdown ul li {
@@ -151,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #49b5e7;
+  color: #0067f4;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -182,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #0f394c;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -190,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #0c1440;
 }
 
 @media (max-width: 991px) {
@@ -226,17 +237,17 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #0c1440;
   overflow-y: auto;
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #0f394c;
+  color: #ffffff;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #49b5e7;
+  color: #0067f4;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -249,8 +260,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #0c1440;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.626);
 }
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
@@ -262,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #49b5e7;
+  color: #0067f4;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -274,7 +285,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #f9f9f9;
+  background: #000000;
+  background-image: url(assets\img\Backgrounds\pattern-dot.svg);
 }
 #hero .container {
   padding-top: 84px;
@@ -284,15 +296,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 42px;
   font-weight: 700;
   line-height: 56px;
-  color: #0f394c;
+  color: #ffffff;
   text-transform: uppercase;
 }
 #hero h2 {
-  color: #1c698c;
+  color: #ffffff;
   margin: 10px 0 0 0;
   font-size: 20px;
 }
-#hero .btn-get-started {
+.btn-get-started {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -302,12 +314,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   transition: 0.5s;
   margin-top: 25px;
-  color: #fff;
-  background: #49b5e7;
+  color: #000000;
+  background: #0067f4;
   text-transform: uppercase;
 }
-#hero .btn-get-started:hover {
-  background: #76c7ed;
+.btn-get-started:hover {
+  background: #003986;
 }
 @media (max-width: 991px) {
   #hero {
@@ -341,7 +353,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4fbfe;
+  background-color: #000000;
 }
 
 .section-title {
@@ -354,7 +366,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #0f394c;
+  color: #ffffff;
 }
 .section-title p {
   margin-bottom: 0;
@@ -366,7 +378,7 @@ section {
 .about .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #0f394c;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 .about .icon-box {
@@ -384,15 +396,15 @@ section {
   transition: 0.5s;
 }
 .about .icon-box .icon i {
-  color: #49b5e7;
+  color: #0067f4;
   font-size: 32px;
 }
 .about .icon-box:hover .icon {
-  background: #49b5e7;
-  border-color: #49b5e7;
+  background: #0067f4;
+  border-color: #0067f4;
 }
 .about .icon-box:hover .icon i {
-  color: #fff;
+  color: #000000;
 }
 .about .icon-box .title {
   margin-left: 85px;
@@ -401,11 +413,11 @@ section {
   font-size: 18px;
 }
 .about .icon-box .title a {
-  color: #343a40;
+  color: #ffffff;
   transition: 0.3s;
 }
 .about .icon-box .title a:hover {
-  color: #49b5e7;
+  color: #0067f4;
 }
 .about .icon-box .description {
   margin-left: 85px;
@@ -426,7 +438,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#49b5e7 50%, rgba(73, 181, 231, 0.4) 52%);
+  background: radial-gradient(#0067f4 50%, rgba(73, 181, 231, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -444,7 +456,7 @@ section {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid #000000;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -471,7 +483,7 @@ section {
   background: rgba(198, 16, 0, 0);
 }
 .about .play-btn:hover::after {
-  border-left: 15px solid #49b5e7;
+  border-left: 15px solid #0067f4;
   transform: scale(20);
 }
 .about .play-btn:hover::before {
@@ -485,7 +497,7 @@ section {
   border: none;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid #000000;
   z-index: 200;
   -webkit-animation: none;
   animation: none;
@@ -517,15 +529,13 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: url("../img/counts-bg.jpg") center center no-repeat;
-  background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
 }
 .counts::before {
   content: "";
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.354);
   left: 0;
   right: 0;
   top: 0;
@@ -533,7 +543,7 @@ section {
 }
 .counts .title {
   position: relative;
-  color: #0f394c;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 .counts .title h3 {
@@ -544,14 +554,14 @@ section {
   font-size: 44px;
   font-weight: 700;
   display: block;
-  color: #49b5e7;
+  color: #0067f4;
   font-family: "Dosis", sans-serif;
 }
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 15px;
-  color: #444444;
+  color: #ffffff;
 }
 @media (min-width: 1200px) {
   .counts {
@@ -562,19 +572,17 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .clients-wrap {
+/* .clients .clients-wrap {
   border-top: 1px solid #eee;
   border-left: 1px solid #eee;
-}
+} */
 .clients .client-logo {
   padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   overflow: hidden;
-  background: #fff;
+  background: #000000;
   height: 120px;
 }
 .clients .client-logo img {
@@ -593,14 +601,33 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-color: #000000;
+}
+
+.services h2 {
+  margin-bottom: 0;
+}
+
+.services .btn-get-started {
+  margin-bottom: 25px;
+}
+
+.services p {
+  background-color: rgba(255, 255, 255, 0.189);
+  padding: 8px 24px;
+  margin-bottom: 20px;
+}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   margin: 0 10px 40px 10px;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  background: #ffffff;
+  color:rgba(7, 25, 33, 0.9);
+  box-shadow: 0 10px 29px 0 rgba(255, 255, 255, 0.626);
   transition: all 0.3s ease-in-out;
 }
 .services .icon-box:hover {
@@ -623,10 +650,10 @@ section {
   font-size: 18px;
 }
 .services .title a {
-  color: #111;
+  color: #0067f4;
 }
 .services .icon-box:hover .title a {
-  color: #49b5e7;
+  color: #3b86f0;
 }
 .services .description {
   font-size: 14px;
@@ -657,12 +684,12 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #0067f4;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #49b5e7;
+  color: #0067f4;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -709,8 +736,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #bdc6ca;
-  border-left: 3px solid #bdc6ca;
+  border-top: 3px solid #0c1440;
+  border-left: 3px solid #0c1440;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -722,18 +749,18 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #bdc6ca;
-  border-right: 3px solid #bdc6ca;
+  border-bottom: 3px solid #0c1440;
+  border-right: 3px solid #0c1440;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #0f394c;
+  color: #0c1440;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #0f394c;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -744,7 +771,7 @@ section {
   z-index: 4;
 }
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #49b5e7;
+  color: #0067f4;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -788,16 +815,16 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #000000;
   opacity: 1;
-  border: 1px solid #49b5e7;
+  border: 1px solid #0067f4;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #49b5e7;
+  background-color: #0067f4;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(15, 57, 76, 0.08);
+  box-shadow: 0px 0 30px rgba(255, 255, 255, 0.626);
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -853,7 +880,7 @@ section {
 }
 .testimonials .testimonial-item {
   text-align: center;
-  color: #fff;
+  color: #000000;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
@@ -865,7 +892,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #fff;
+  color: #000000;
 }
 .testimonials .testimonial-item h4 {
   font-size: 14px;
@@ -903,7 +930,7 @@ section {
   background-color: rgba(255, 255, 255, 0.4);
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #49b5e7;
+  background-color: #0067f4;
 }
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
@@ -918,8 +945,9 @@ section {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.589);
 }
 .team .member .member-img {
   position: relative;
@@ -936,7 +964,7 @@ section {
 }
 .team .member .social a {
   transition: color 0.3s;
-  color: #0f394c;
+  color: #ffffff;
   margin: 0 3px;
   border-radius: 50px;
   width: 36px;
@@ -946,10 +974,10 @@ section {
   align-items: center;
   justify-content: center;
   transition: ease-in-out 0.3s;
-  color: #fff;
+  color: #000000;
 }
 .team .member .social a:hover {
-  background: #76c7ed;
+  background: #003986;
 }
 .team .member .social i {
   font-size: 18px;
@@ -962,7 +990,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #0f394c;
+  color: #ffffff;
 }
 .team .member .member-info span {
   display: block;
@@ -986,8 +1014,8 @@ section {
 --------------------------------------------------------------*/
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 3px solid #000000;
+  border-bottom: 3px solid #000000;
 }
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
@@ -1001,15 +1029,15 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 .contact .info i {
   font-size: 20px;
-  color: #49b5e7;
+  color: #0067f4;
   float: left;
   width: 44px;
   height: 44px;
-  background: #ebf7fc;
+  background: #0c1440;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1021,31 +1049,31 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #0f394c;
+  color: #ffffff;
 }
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #2079a1;
+  color: #0067f4;
 }
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #49b5e7;
-  color: #fff;
+  background: #0067f4;
+  color: #000000;
 }
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1056,7 +1084,7 @@ section {
 }
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1064,7 +1092,7 @@ section {
 }
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #000000;
   text-align: center;
   padding: 15px;
 }
@@ -1093,10 +1121,10 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #49b5e7;
+  background: #0067f4;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #000000;
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -1125,7 +1153,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f0f9fd;
+  background: #0c1440;
   margin-top: 84px;
 }
 @media (max-width: 992px) {
@@ -1152,7 +1180,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #175977;
+  color: #0067f4;
   content: "/";
 }
 @media (max-width: 768px) {
@@ -1171,15 +1199,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: #000000;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: #ffffff;
   font-size: 14px;
-  background: #ebf7fc;
+  background: #0c1440;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f0f9fd;
+  background: #0c1440;
   text-align: center;
   font-size: 15px;
 }
@@ -1189,15 +1217,15 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #0f394c;
+  color: #ffffff;
 }
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: #000000;
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.626) 0.58), 0.1);
   text-align: left;
 }
 #footer .footer-newsletter form input[type=email] {
@@ -1214,18 +1242,18 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #49b5e7;
-  color: #fff;
+  background: #0067f4;
+  color: #000000;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.626);
 }
 #footer .footer-newsletter form input[type=submit]:hover {
   background: #1da2e0;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #000000;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1242,12 +1270,12 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Lato", sans-serif;
-  color: #777777;
+  color: #ffffff;
 }
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #0f394c;
+  color: #ffffff;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1261,7 +1289,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #49b5e7;
+  color: #0067f4;
   font-size: 18px;
   line-height: 1;
 }
@@ -1274,20 +1302,20 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #ffffff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #49b5e7;
+  color: #0067f4;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #49b5e7;
-  color: #fff;
+  background: #0067f4;
+  color: #000000;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1299,17 +1327,17 @@ section {
 }
 #footer .footer-top .social-links a:hover {
   background: #1da2e0;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 #footer .copyright {
   float: left;
-  color: #0f394c;
+  color: #ffffff;
 }
 #footer .credits {
   float: right;
-  font-size: 13px;
-  color: #0f394c;
+  font-size: 8px;
+  color: #ffffff;
 }
 @media (max-width: 575px) {
   #footer .copyright, #footer .credits {
